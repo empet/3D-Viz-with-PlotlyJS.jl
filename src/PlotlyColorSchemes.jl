@@ -1,17 +1,11 @@
 import ColorSchemes: viridis, inferno, twilight, deep, matter, ice, algae,  balance, curl
-import Images: get
-import Colors: red, green, blue
+import Colors.hex
 function plotly_cs(colorscheme; n_entries=11)
-    scale = range(0, stop=1, length=n_entries)
+    scale = LinRange(0, 1, n_entries) 
     colors =[get(colorscheme, s) for s in scale]
-
-    plotly_color=[]
-    for  (s, c) in zip(scale, colors)
-        col = Tuple(round.(Int, 255*[red(c), green(c), blue(c)]))
-        push!(plotly_color, [s, "rgb$col"])
-    end
-    return plotly_color
+    return [[s, hex(color)] for (s, color) in zip(scale, colors)]
 end
+
 
 pl_hsv=[[0.0, "rgb(0, 242, 242)"], #S=1, V=0.95, 
  [0.083, "rgb(0, 121, 242)"],
