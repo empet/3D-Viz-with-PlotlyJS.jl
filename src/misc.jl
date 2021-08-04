@@ -26,11 +26,11 @@ function tri_edges(verts_matr::AbstractMatrix, tri_matr::AbstractMatrix;
                    mode="lines",
                    name=" ",
                    line=attr(color=linecolor, width=1.5))  
-end 
+end; 
 
 function black_bg(; bg_color = "rgb(20, 20, 20)",
-                      grid_color="rgb(150, 150, 150)", 
-                      zeroline=false)
+                    grid_color="rgb(150, 150, 150)", 
+                    zeroline=false)
 return  Dict{Any, Any}( #black background
         :showbackground => true, 
         :backgroundcolor => bg_color, 
