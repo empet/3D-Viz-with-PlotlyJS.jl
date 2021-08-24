@@ -17,6 +17,10 @@ Their attributes can be found at  [https://plotly.com/javascript/reference/](htt
 
 ![panel3](https://raw.githubusercontent.com/empet/3D-Viz-with-PlotlyJS.jl/main/images/thumbnails3.png)
 
+Links to nbviewer address at some notebooks:
+
+[Ribbon surface with B&eacute;zier curve as spine](https://nbviewer.jupyter.org/github/empet/3D-Viz-with-PlotlyJS.jl/blob/main/17-Ribbon-with%20Bezier-curve-as-spine.ipynb)
+
 
 
 
